@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 100px auto;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.left-column,
+.right-column {
+    padding: 20px;
+    width: 50%;
+}
+
+.left-column {
+    background-color: #80deea;
+    color: #004d40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 200px;
+    margin: 20px 0;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 150px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #00695c;
+    border-bottom: 2px solid #26a69a;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.contact-info button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contact-info button:hover {
+    background-color: #004d40;
+}
+
+#contact-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#contact-details.show {
+    max-height: 500px;
+    /* Đặt giá trị lớn để đủ chứa nội dung */
+    opacity: 1;
+}
+
+.toggle-left-column {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-column {
+        position: fixed;
+        left: -200px;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .left-column.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .right-column {
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .toggle-left-column {
+        display: block;
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        background-color: #00796b;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 1001;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 200px;
+        margin: 20px 0;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    
+    .profile-pic img {
+        width: 150px;
+    }
+    
+}

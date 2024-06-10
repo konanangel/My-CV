@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV of DangVuDinh</title>
+    <link rel="icon" href="/assets/profile_image.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column" id="left-column">
+            <div class="profile-pic">
+                <img src="/assets/profile_image.jpg" alt="Profile Picture">
+            </div>
+            <section class="contact-info">
+                <h2>Vũ Đình Đăng</h2>
+                <button onclick="toggleContactInfo()">Personal Information</button>
+                <div id="contact-details" class="hidden">
+                    <p>Email: dangvdhe180699@fpt.edu.vn</p>
+                    <p>Phone number: 0915 238 314</p>
+                    <p>Address: Thach Hoa, Thach That, Ha Noi</p>
+                </div>
+            </section>
+        </div>
+        <div class="right-column">
+            <header>
+                <h1>Vũ Đình Đăng</h1>
+                <p>Student</p>
+            </header>
+            <section class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>Thai Binh Gifted High School</h3>
+                        <p>Math 1, 2019 - 2022</p>
+                    </li>
+                    <li>
+                        <h3>FPT University</h3>
+                        <p>Bachelor of Science in Software Engineering, 2022 - 2026</p>
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>NodeJS, Java</li>
+                    <li>Beginner SQL</li>
+                </ul>
+            </section>
+            <section class="experience">
+                <h2>Personal Project</h2>
+                <ul>
+                    <li>
+                        <h3>Overdraw Extension</h3>
+                        <a href="https://github.com/dangNguyenDinh/overDraw2">https://github.com/dangNguyenDinh/overDraw2</a>
+                    </li>
+                    <li>
+                        <h3>Japanese For Dummies</h3>
+                        <a href="https://j4f-beta.vercel.app/Views/hira_kata/index.html">https://j4f-beta.vercel.app/Views/hira_kata/index.html</a>
+                    </li>
+                    <li>
+                        <h3>Japanese Small Game For Practice</h3>
+                        <a href="https://dangnguyendinh.github.io/bubble/">https://dangnguyendinh.github.io/bubble/</a>
+                    </li>
+                </ul>
+                
+            </section>
+        </div>
+    </div>
+    <button class="toggle-left-column" onclick="toggleLeftColumn()">☰</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
